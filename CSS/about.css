@@ -1,0 +1,429 @@
+/* General Page Styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #F5EFE6;
+    color: #2F2F2F;
+    font-family: "Open Sans", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+/* HEADER*/
+
+.site-header {
+    background-color: #3E2723;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.logo {
+    margin: 0;
+    color: #F5D6A6;
+    font-family: Georgia, serif;
+    font-size: 42px;
+}
+
+.tagline {
+    margin: 5px 0 25px;
+    color: white;
+    font-size: 16px;
+}
+
+
+
+
+/* NAVIGATION */
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 0.4rem 0;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #F5D6A6;
+    border-bottom-color: #6B8E23;
+}
+
+/* Active reservation page */
+.nav-link.active {
+    color: #F5D6A6;
+    border-bottom-color: #6B8E23;
+}
+
+/*DIVIDERS */
+
+.section-divider {
+    border: 0;
+    border-top: 1px solid #D8C8B8;
+    margin: 0;
+}
+
+
+/* ABOUT PAGE*/
+
+.about-main {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* About Introduction */
+
+.about-intro {
+    text-align: center;
+    padding: 70px 20px;
+    background-color: #FFFAF3;
+}
+
+.section-title {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #3E2723;
+    font-family: Georgia, serif;
+    font-size: 36px;
+}
+
+.section-text {
+    max-width: 750px;
+    margin: 0 auto 15px;
+    font-size: 17px;
+}
+
+
+/* OUR STORY*/
+
+.story-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #F5EFE6;
+}
+
+.story-section .section-text {
+    max-width: 800px;
+}
+/* OUR MISSION AND VISION */
+.mission-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #E8DFD2;
+}
+
+.mission-section .section-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.vision-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #FFFAF3;
+}
+
+.vision-section .section-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* OUR VALUES */
+
+.values-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #E8DFD2;
+}
+
+.values-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.value-card {
+    width: 300px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+}
+
+.card-title {
+    margin-top: 0;
+    color: #3E2723;
+    font-family: Georgia, serif;
+    font-size: 22px;
+}
+
+.card-text {
+    font-size: 15px;
+}
+
+
+/* WHY CHOOSE US */
+
+.why-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #FFFAF3;
+}
+
+.why-container {
+    max-width: 800px;
+    margin: 30px auto 0;
+    text-align: left;
+}
+
+.why-item {
+    background-color: white;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-left: 5px solid #6B8E23;
+    border-radius: 5px;
+}
+
+.why-item h3 {
+    margin-top: 0;
+    color: #3E2723;
+    font-family: Georgia, serif;
+}
+
+.why-item p {
+    margin-bottom: 0;
+}
+
+
+/* CALL TO ACTION */
+
+.about-cta {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #3E2723;
+    color: white;
+}
+
+.about-cta .section-title {
+    color: #F5D6A6;
+}
+
+.about-cta .section-text {
+    color: white;
+}
+
+
+/* BUTTON*/
+
+.button {
+    display: inline-block;
+    padding: 12px 22px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.primary-button {
+    background-color: #6B8E23;
+    color: white;
+}
+
+.primary-button:hover {
+    background-color: #557318;
+}
+/* THE EXPLORE SECTION */
+.explore-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #F5EFE6;
+}
+
+.explore-links {
+    margin-top: 25px;
+}
+
+
+/* FOOTER*/
+
+.site-footer {
+    background-color: #3E2723;
+    color: white;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+.footer-text {
+    margin: 0 0 5px;
+}
+
+.footer-location {
+    margin: 0;
+    color: #F5D6A6;
+}
+
+
+/* 
+   MOBILE RESPONSIVENESS*/
+
+@media (max-width: 600px) {
+
+    .logo {
+        font-size: 32px;
+    }
+
+    .main-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-link {
+        width: 200px;
+    }
+
+    .about-intro {
+        padding: 50px 20px;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    .section-text {
+        font-size: 16px;
+    }
+
+    .value-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .why-container {
+        width: 100%;
+    }
+}
+
+/* Interactive Accordion */
+
+.accordion-section {
+    width: 85%;
+    max-width: 850px;
+    margin: 50px auto;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.accordion-item {
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f5efe6;
+    border: 1px solid #d8c8b8;
+}
+
+.accordion-button {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    background-color: #4b2e22;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-button:hover {
+    background-color: #355e3b;
+}
+
+.accordion-icon {
+    font-size: 24px;
+}
+
+.accordion-content {
+    padding: 20px;
+    color: #3f332b;
+    line-height: 1.7;
+    background-color: #f5efe6;
+}
+
+.accordion-content p {
+    margin-bottom: 12px;
+}
+
+@media (max-width: 600px) {
+    .accordion-section {
+        width: 90%;
+    }
+
+    .accordion-button {
+        font-size: 16px;
+        padding: 16px;
+    }
+}
+
+/* =================================
+   ABOUT PAGE ANIMATIONS
+================================= */
+
+/* Smooth accordion button transitions */
+.accordion-button {
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                padding-left 0.3s ease;
+}
+
+/* Accordion hover effect */
+.accordion-button:hover {
+    padding-left: 28px;
+}
+
+/* Smooth accordion content appearance */
+.accordion-content {
+    animation: accordionFade 0.4s ease;
+}
+
+@keyframes accordionFade {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .accordion-button,
+    .accordion-content {
+        transition: none;
+        animation: none;
+    }
+}

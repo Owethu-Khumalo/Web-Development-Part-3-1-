@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breeze Cafe | Menu</title>
+    <meta name="description" content="Explore the Breeze Cafe menu in Estcourt, KwaZulu-Natal. Discover breakfast meals, light lunches, freshly brewed coffee, refreshing drinks and delicious desserts.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Breeze Cafe">
+    <meta name="theme-color" content="#3E2723">
+    <Link rel="stylesheet" href="CSS/menu.css">
+</head>
+<body class="menu-page">
+ <!-- Header -->
+    <header class="site-header">
+        <h1 class="logo">Breeze Cafe</h1>
+        <p class="tagline">Fresh Food. Great Coffee. A Warm Welcome.</p>
+
+        <!-- Navigation -->
+       <nav class="main-nav">
+            <a class="nav-link" href="index.html">Home</a> 
+            <a class="nav-link" href="about.html">About Us</a> 
+            <a class="nav-link active" href="menu.html">Menu</a> 
+           <a class="nav-link" href="reservation.html">Reservations</a> 
+            <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <hr class="section-divider">
+
+    <!-- Main Content -->
+    <main class="menu-main">
+
+       <section class="menu-intro">
+           <h2 class="section-title">Our Menu</h2>
+
+            <p class="section-text">
+                Explore our selection of food and drinks at Breeze Cafe.
+            </p>
+        </section>
+
+       
+<hr class="section-divider">
+
+<!-- Menu Search and Filters -->
+<section class="menu-controls">
+
+    <h2 class="section-title">Find Your Favourite</h2>
+
+    <input
+        type="text"
+        id="menu-search"
+        placeholder="Search for a dish..."
+        aria-label="Search menu items"
+    >
+
+    <div class="filter-controls">
+
+        <select id="category-filter" aria-label="Filter by category">
+            <option value="all">All Categories</option>
+            <option value="breakfast">Breakfast</option>
+            <option value="lunch">Light Lunch</option>
+            <option value="drinks">Drinks</option>
+            <option value="desserts">Desserts</option>
+        </select>
+
+        <select id="price-sort" aria-label="Sort by price">
+            <option value="default">Default Order</option>
+            <option value="low-high">Price: Low to High</option>
+            <option value="high-low">Price: High to Low</option>
+        </select>
+
+    </div>
+
+    <p id="menu-results" aria-live="polite"></p>
+
+</section>
+
+<hr class="section-divider">
+
+<!-- Breakfast -->
+<section class="menu-category breakfast-section">
+
+    <h2 class="category-title">Breakfast</h2>
+
+    <p class="category-description">
+        Start your day with a delicious and freshly prepared breakfast.
+    </p>
+
+    <!-- Breakfast Image -->
+    <div class="category-image">
+
+        <img
+            src="Images/Toast and Eggs.jpg"
+            alt="Toast and eggs breakfast at Breeze Cafe"
+            class="menu-image"
+        >
+
+        <article class="menu-item">
+            <h3 class="menu-item-title">Full Breakfast</h3>
+            <p class="menu-item-description">
+                A delicious breakfast to start your day.
+            </p>
+        </article>
+
+    </div>
+
+    <!-- Breakfast Items -->
+    <div class="menu-items">
+
+        <article class="menu-item">
+            <h3 class="menu-item-title">Breakfast Sandwich</h3>
+            <p class="menu-item-description">
+                A freshly prepared sandwich perfect for breakfast.
+            </p>
+            <p class="menu-price">R65.00</p>
+        </article>
+
+        <article class="menu-item">
+            <h3 class="menu-item-title">Toast and Eggs</h3>
+            <p class="menu-item-description">
+                A simple and satisfying breakfast option.
+            </p>
+            <p class="menu-price">R85.00</p>
+        </article>
+
+        <article class="menu-item">
+            <h3 class="menu-item-title">Pancakes</h3>
+            <p class="menu-item-description">
+                Fluffy pancakes served with a sweet topping.
+            </p>
+            <p class="menu-price">R45.00</p>
+        </article>
+
+        <article class="menu-item">
+            <h3 class="menu-item-title">Omelette</h3>
+            <p class="menu-item-description">
+                A freshly prepared omelette served with toast.
+            </p>
+            <p class="menu-price">R50.00</p>
+        </article>
+
+    </div>
+
+</section>
+
+<hr class="section-divider">
+
+
+
+<hr class="section-divider">
+         <!-- Light Lunch -->
+<section class="menu-category lunch-section">
+
+    <h2 class="category-title">Light Lunch</h2>
+
+    <p class="category-description">
+        Enjoy a light and satisfying lunch made with fresh ingredients.
+    </p>
+
+    <!-- Lunch Image -->
+    <div class="category-image">
+        <img 
+            src="Images/Chicken Sandwich.jpg" 
+            alt="Chicken sandwich at Breeze Cafe"
+            class="menu-image"
+        >
+        <article class="menu-item">
+            <h3 class="menu-item-title">Daily Lunch Special</h3>
+
+            <p class="menu-item-description">
+                Ask our staff about today's lunch special.
+            </p>
+        </article>
+    </div>
+
+    <!-- Lunch Items -->
+    <div class="menu-items">
+
+        <article class="menu-item">
+            <h3 class="menu-item-title">Chicken Sandwich</h3>
+
+            <p class="menu-item-description">
+                A tasty chicken sandwich prepared fresh.
+            </p>
+            <p class="menu-price" data-price="30">R90.00</p>
+        </article>
+
+        <article class="menu-item">
+            <h3 class="menu-item-title">Fresh Salad</h3>
+
+            <p class="menu-item-description">
+                A light and refreshing salad made with fresh ingredients.
+            </p>
+            <p class="menu-price" data-price="30">R40.00</p>
+        </article>
+
+        
+        <article class="menu-item">
+    <h3>Chicken Wrap</h3>
+    <p>A tasty chicken wrap with fresh salad.</p>
+    <p class="menu-price" data-price="60">R60.00</p>
+</article>
+
+<article class="menu-item">
+    <h3>Beef Burger</h3>
+    <p>A beef burger served with fresh toppings.</p>
+    <p class="menu-price" data-price="75">R75.00</p>
+</article>
+
+    </div>
+
+</section>
+
+<hr class="section-divider">
+        <!-- Drinks -->
+<section class="menu-category drinks-section">
+
+    <h2 class="category-title">Drinks</h2>
+
+    <p class="category-description">
+        Refresh yourself with our selection of hot and cold drinks.
+    </p>
+
+    <!-- Drinks Image -->
+    <div class="category-image">
+        <img 
+            src="Images/Drinks.jpg" 
+            alt="Drinks at Breeze Cafe"
+            class="menu-image"
+        >
+        <article class="menu-item">
+            <h3 class="menu-item-title">Cold Drinks</h3>
+
+            <p class="menu-item-description">
+                A variety of refreshing cold drinks.
+            </p>
+        </article>
+    </div>
+
+    <!-- Drinks Items -->
+    <div class="menu-items">
+
+        <article class="menu-item">
+            <h3 class="menu-item-title">Fresh Coffee</h3>
+
+            <p class="menu-item-description">
+                Freshly brewed coffee served with care.
+            </p>
+            <p class="menu-price" data-price="30">R50.00</p>
+        </article>
+
+        <article class="menu-item">
+            <h3 class="menu-item-title">Tea</h3>
+
+            <p class="menu-item-description">
+                A selection of refreshing teas.
+            </p>
+            <p class="menu-price" data-price="30">R45.00</p>
+        </article>
+        <article class="menu-item">
+    <h3>Cappuccino</h3>
+    <p>Rich espresso topped with steamed milk foam.</p>
+    <p class="menu-price" data-price="35">R35.00</p>
+</article>
+
+<article class="menu-item">
+    <h3>Iced Coffee</h3>
+    <p>Chilled coffee served over ice.</p>
+    <p class="menu-price" data-price="40">R40.00</p>
+</article>
+
+        
+
+    </div>
+
+</section>
+
+
+
+       <hr class="section-divider">
+
+        <!-- Desserts -->
+<section class="menu-category desserts-section">
+
+    <h2 class="category-title">Desserts</h2>
+
+    <p class="category-description">
+        Finish your meal with one of our delicious desserts.
+    </p>
+
+    <!-- Dessert Image -->
+    <div class="category-image">
+        <img 
+            src="Images/Dessert.jpg" 
+            alt="Dessert at Breeze Cafe"
+            class="menu-image"
+        > 
+        <article class="menu-item">
+            <h3 class="menu-item-title">Daily Dessert</h3>
+
+            <p class="menu-item-description">
+                Ask our staff about today's dessert.
+            </p>
+        </article>
+    </div>
+
+    <!-- Dessert Items -->
+    <div class="menu-items">
+
+        <article class="menu-item">
+            <h3 class="menu-item-title">Chocolate Cake</h3>
+
+            <p class="menu-item-description">
+                A delicious chocolate dessert perfect for a sweet treat.
+            </p>
+            <p class="menu-price" data-price="30">R40.00</p>
+        </article>
+
+        <article class="menu-item">
+            <h3 class="menu-item-title">Cheesecake</h3>
+
+            <p class="menu-item-description">
+                A creamy and delicious cheesecake.
+            </p>
+            <p class="menu-price" data-price="30">R60.00</p>
+        </article>
+        <article class="menu-item">
+    <h3>Chocolate Brownie</h3>
+    <p>A rich chocolate brownie with a soft centre.</p>
+    <p class="menu-price" data-price="30">R30.00</p>
+</article>
+
+<article class="menu-item">
+    <h3>Fresh Muffin</h3>
+    <p>A freshly baked muffin, perfect with coffee.</p>
+    <p class="menu-price" data-price="25">R25.00</p>
+</article>
+
+       
+
+    </div>
+
+</section>
+
+
+
+       <hr class="section-divider">
+
+       <!-- Reservation -->
+<section class="reservation-cta">
+
+    <h2 class="cta-title">Want to Visit Us?</h2>
+
+    <p class="cta-text">
+        Make a reservation before your visit and enjoy a relaxing experience at Breeze Cafe.
+    </p>
+
+    <a class="button primary-button" href="reservation.html">
+        Make a Reservation
+    </a>
+
+</section>
+
+    <!-- Footer -->
+   <footer class="site-footer">
+        <p>&copy; 2026 Breeze Cafe. All Rights Reserved.</p>
+        <p>Estcourt, KwaZulu-Natal</p>
+    </footer>
+    <!-- Image Lightbox -->
+<div id="image-lightbox" class="lightbox">
+
+    <button id="close-lightbox" class="close-lightbox"
+        aria-label="Close image">&times;</button>
+
+    <img id="lightbox-image" src="" alt="Enlarged menu image">
+
+</div>
+    <script src="Javascript/menu.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+

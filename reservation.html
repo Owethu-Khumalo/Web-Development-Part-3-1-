@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breeze Cafe | Reservations</title>
+    <meta name="description" content="Plan your visit to Breeze Cafe in Estcourt, KwaZulu-Natal. Submit a reservation request and enjoy fresh food, great coffee and a welcoming café atmosphere.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Breeze Cafe">
+    <meta name="theme-color" content="#3E2723">
+    <link rel="stylesheet" href="CSS/reservation.css">
+</head>
+<body class="reservation-page">
+    
+
+    <!-- Header -->
+    <header class="site-header">
+        <h1 class="logo">Breeze Cafe</h1>
+       <p class="tagline">Fresh Food. Great Coffee. A Warm Welcome.</p>
+
+        <!-- Navigation -->
+       <nav class="main-nav">
+           <a class="nav-link" href="index.html">Home</a> 
+            <a class="nav-link" href="about.html">About Us</a> 
+            <a class="nav-link" href="menu.html">Menu</a> 
+            <a class="nav-link active" href="reservation.html">Reservations</a> 
+            <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+   <hr class="section-divider">
+
+    <!-- Main Content -->
+   <main class="reservation-main">
+
+        <section class="reservation-intro">
+            <h2 class="section-title">Reservations & Enquiries</h2>
+
+          <p class="section-text">
+                Complete the form below to send Breeze Cafe a
+                reservation or enquiry request.
+            </p>
+        </section>
+
+      <hr class="section-divider">
+
+         <!-- Reservation Form -->
+        <section class="reservation-form-section">
+            <h2 class="section-title">Make a Reservation</h2>
+
+           <form class="reservation-form">
+            <div class="form-group">
+            
+
+                <label class="form-label" for="full-name">Full Name:</label>
+                <br>
+                <input class="form-input" type="text" id="full-name" name="full-name" required >
+           </div>
+
+                <br><br>
+                <div class="form-group">
+                 <label class="form-label" for="email">Email Address:</label>
+                <br>
+                <input class="form-input" type="email" id="email" name="email" required >
+        </div>
+
+                <br><br>
+                <div class="form-group">
+
+                <label class="form-label" for="phone">Phone Number:</label>
+                <br>
+                <input class="form-input" type="tel" id="phone" name="phone" >
+                </div>
+                <br><br>
+                <div class="form-group">
+
+                <label class="form-label" for="date">Reservation Date:</label>
+                <br>
+                <input class="form-input" type="date" id="date" name="date" required >
+                </div>
+
+                <br><br>
+                <div class="form-group">
+
+                <label class="form-label" for="time">Reservation Time:</label>
+                <br>
+                <input class="form-input" type="time" id="time" name="time" required >
+                </div>
+
+                <br><br>
+                <div class="form-group">
+
+                <label class="form-label" for="guests">Number of Guests:</label>
+                <br>
+                <input class="form-input" type="number" id="guests" name="guests" min="1" required >
+                </div>
+
+                <br><br>
+                <div class="form-group">
+                
+
+                <label class="form-label" for="message">Additional Message:</label>
+                <br>
+                <textarea class="form-textarea" id="message" name="message" rows="6" placeholder="Enter any additional information here..." ></textarea>
+                </div>
+
+                <br><br>
+                <div class="form-buttons">
+                <button class="button primary-button" type="submit" >Send Reservation Request</button>
+
+                <button class="button secondary-button" type="reset" >Clear Form</button>
+                 </div>
+            </form>
+        </section>
+
+       <hr class="section-divider">
+        <!-- Enquiry -->
+       <section class="enquiry-section">
+            <h2 class="section-title">General Enquiries</h2>
+
+            <p class="section-text">
+                If you have a question about our menu, opening hours,
+                location or services, please use the form above or
+                contact us directly.
+            </p>
+
+            <a class="button secondary-button" href="contact.html">View Contact Details</a>
+        </section>
+
+    </main>
+
+    <hr class="section-divider">
+<!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Breeze Cafe. All Rights Reserved.</p>
+        <p>Estcourt, KwaZulu-Natal</p>
+    </footer>
+    <script src="Javascript/reservation.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

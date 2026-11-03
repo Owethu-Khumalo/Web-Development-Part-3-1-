@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breeze Cafe | Contact</title>
+    <meta name="description" content="Contact Breeze Cafe in Estcourt, KwaZulu-Natal. Find our location, view our business information and send us an enquiry using our online contact form.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Breeze Cafe">
+     <meta name="theme-color" content="#3E2723">
+
+
+
+    <link rel="stylesheet" href="CSS/contact.css">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+</head>
+<body class="contact-page">
+     <!-- Header -->
+    <header class="site-header">
+        <h1 class="logo">Breeze Cafe</h1>
+        <p class="tagline">Fresh Food. Great Coffee. A Warm Welcome.</p>
+
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <a class="nav-link" href="index.html">Home</a> 
+            <a class="nav-link" href="about.html">About Us</a> 
+            <a class="nav-link" href="menu.html">Menu</a> 
+            <a class="nav-link" href="reservation.html">Reservations</a> 
+            <a class="nav-link active" href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <hr class="section-divider">
+
+ <!-- Main Content -->
+<main class="contact-main">
+
+    <!-- Contact Introduction -->
+    <section class="contact-intro">
+
+        <h2 class="section-title">
+            Contact Breeze Cafe
+        </h2>
+
+        <p class="section-text">
+            We would love to hear from you. Contact us for
+            reservations, enquiries or more information.
+        </p>
+
+    </section>
+
+       <hr class="section-divider">
+
+       <!-- Contact Details -->
+<section class="contact-details-section">
+
+    <h2 class="section-title">Contact Details</h2>
+
+    <div class="contact-details">
+
+        <div class="contact-item">
+            <h3 class="contact-item-title">Location</h3>
+            <p class="contact-item-text">
+                83 Lorne Street, Estcourt, KwaZulu-Natal
+            </p>
+        </div>
+
+        <div class="contact-item">
+            <h3 class="contact-item-title">Phone</h3>
+            <p class="contact-item-text">
+                011 355 6645
+            </p>
+        </div>
+
+        <div class="contact-item">
+            <h3 class="contact-item-title">Email</h3>
+            <p class="contact-item-text">
+                Breeze-Cafe@gmail.com
+            </p>
+        </div>
+
+    </div>
+        </section>
+
+       <hr class="section-divider">
+
+        <!-- Business Hours -->
+        <section class="hours-section">
+           <h2 class="section-title">Business Hours</h2>
+
+            <p class="hours-item">
+                <strong>Monday - Friday:8am to 5pm</strong>
+               
+            </p>
+
+            <p class="hours-item">
+                <strong>Saturday:8am to 2pm</strong>
+                
+            </p>
+
+            <p class="hours-item">
+                <strong>Closed on sundays and puplic holidays</strong>
+                
+            </p>
+        </div>
+        </section>
+
+        <hr class="section-divider">
+
+        <!-- Location -->
+<section class="location-section">
+    <h2 class="section-title">Find Us</h2>
+
+    <p class="section-text">
+        Breeze Cafe is located at 83 Lorne Street,
+        Estcourt, KwaZulu-Natal.
+    </p>
+
+    <div id="map"></div>
+</section>
+
+        <hr class="section-divider">
+
+        <!-- Social Media -->
+<section class="social-section">
+
+    <h2 class="section-title">Follow Us</h2>
+
+    <p class="section-text">
+        Follow Breeze Cafe on social media for updates,
+        promotions and special offers.
+    </p>
+
+    <div class="social-links">
+
+        <a class="social-link" href="https://www.facebook.com/breezecafecoffeeshop/">
+            Facebook
+        </a>
+
+        <a class="social-link" href="https://www.instagram.com/explore/locations/403352676921303/breeze-cafe-estcourt/">
+            Instagram
+        </a>
+
+    </div>
+
+        </section>
+        
+<!-- Contact Form -->
+<section class="contact-form-section">
+
+    <h2 class="section-title">Send Us a Message</h2>
+
+    <p class="section-text">
+        Have a question, suggestion or feedback?
+        Complete the form below and get in touch with us.
+    </p>
+
+    <form class="contact-form" id="contact-form" novalidate>
+
+        <div class="form-group">
+            <label for="contact-name">Full Name:</label>
+            <input
+                type="text"
+                id="contact-name"
+                name="name"
+                placeholder="Enter your full name"
+                required
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="contact-email">Email Address:</label>
+            <input
+                type="email"
+                id="contact-email"
+                name="email"
+                placeholder="Enter your email address"
+                required
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="contact-subject">Subject:</label>
+            <input
+                type="text"
+                id="contact-subject"
+                name="subject"
+                placeholder="Enter the subject"
+                required
+            >
+        </div>
+
+        <div class="form-group">
+            <label for="contact-message">Your Message:</label>
+            <textarea
+                id="contact-message"
+                name="message"
+                rows="6"
+                placeholder="Write your message here..."
+                required
+            ></textarea>
+        </div>
+
+        <div class="contact-form-buttons">
+            <button type="submit" class="button primary-button">
+                Send Message
+            </button>
+
+            <button type="reset" class="button secondary-button">
+                Clear Form
+            </button>
+        </div>
+
+    </form>
+
+</section>
+
+<hr class="section-divider">
+
+
+        <hr class="section-divider">
+
+        <!-- Reservation -->
+<section class="contact-reservation">
+
+    <h2 class="section-title">Make a Reservation</h2>
+
+    <p class="section-text">
+        Would you like to visit us? Send a reservation request.
+    </p>
+
+    <a class="button primary-button" href="reservation.html">
+        Make a Reservation
+    </a>
+
+</section>
+
+    </main>
+
+    <hr class="section-divider">
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Breeze Cafe. All Rights Reserved.</p>
+        <p>Estcourt, KwaZulu-Natal</p>
+    </footer>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="Javascript/contact.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+

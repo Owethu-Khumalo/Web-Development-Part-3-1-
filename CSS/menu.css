@@ -1,0 +1,612 @@
+
+/* Root font size */
+html {
+    font-size: 16px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #F5EFE6;
+    color: #2F2F2F;
+    font-family: "Open Sans", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+
+.site-header {
+    background-color: #3E2723;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem 1.5rem;
+}
+
+/* Logo */
+.logo {
+    color: #F5D6A6;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.5rem;
+    margin-bottom: 0.3rem;
+}
+
+/* Tagline */
+.tagline {
+    color: #F5EFE6;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* NAVIGATION */
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 0.4rem 0;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Navigation hover */
+.nav-link:hover {
+    color: #F5D6A6;
+    border-bottom-color: #6B8E23;
+}
+
+/* Active page */
+.nav-link.active {
+    color: #F5D6A6;
+    border-bottom-color: #6B8E23;
+}
+
+/* DIVERS */
+
+.section-divider {
+    border: none;
+    border-top: 1px solid #D6C7B8;
+    margin: 0;
+}
+
+/* MAIN CONTENT */
+
+.menu-main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+/* MENU INTRODUCTION */
+
+.menu-intro {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 3rem;
+}
+
+.section-title {
+    color: #5D4037;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.4rem;
+    margin-bottom: 0.7rem;
+}
+
+.section-text {
+    color: #555555;
+    font-size: 1rem;
+}
+
+/* MAIN CATEGORY */
+
+.menu-category {
+    background-color: #FFFAF3;
+    padding: 2rem;
+    margin: 3rem 0;
+    border-radius: 12px;
+    border: 1px solid #E3D6C8;
+    box-shadow: 0 4px 12px rgba(62, 39, 35, 0.08);
+}
+
+/* Category heading */
+.category-title {
+    color: #5D4037;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.9rem;
+    text-align: center;
+    margin-bottom: 0.4rem;
+}
+
+/* Category description */
+.category-description {
+    color: #666666;
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 1.5rem;
+    font-size: 0.95rem;
+}
+
+/* CATEGORY IMAGE */
+
+.category-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+/* Food image */
+.menu-image {
+    width: 300px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 4px solid white;
+    box-shadow: 0 5px 14px rgba(62, 39, 35, 0.18);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Image hover */
+.menu-image:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 18px rgba(62, 39, 35, 0.22);
+}
+
+/* MENU ITEMS */
+
+/* Menu item styling */
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.menu-item {
+    background-color: #FFFFFF;
+    border: 1px solid #E5DCCB;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.menu-item h3 {
+    color: #355E3B;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    color: #5B4636;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Menu prices */
+.menu-item .menu-price {
+    color: #355E3B;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+/* Responsive layout */
+@media (max-width: 900px) {
+    .menu-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .menu-items {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-item {
+        padding: 16px;
+    }
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.3rem;
+}
+
+/* Individual menu card */
+.menu-item {
+    background-color: white;
+    border: 1px solid #E2D8CE;
+    border-radius: 10px;
+    padding: 1.4rem;
+    text-align: center;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Menu card hover */
+.menu-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 7px 18px rgba(62, 39, 35, 0.12);
+}
+
+/* Menu item content */
+.menu-item-content {
+    width: 100%;
+}
+
+/* Menu item heading */
+.menu-item-title {
+    color: #5D4037;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Menu item description */
+.menu-item-description {
+    color: #666666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* RESERVATION-CTA */
+
+.reservation-cta {
+    background-color: #3E2723;
+    color: white;
+    text-align: center;
+    padding: 3rem 2rem;
+    margin: 3rem 0 1rem;
+    border-radius: 12px;
+}
+
+.cta-title {
+    color: #F5D6A6;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+}
+
+.cta-text {
+    color: #F5EFE6;
+    max-width: 650px;
+    margin: 0 auto 1.5rem;
+    font-size: 0.95rem;
+}
+
+/* BUTTON */
+.button {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 6px;
+    padding: 0.75rem 1.5rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.primary-button {
+    background-color: #6B8E23;
+    color: white;
+}
+
+.primary-button:hover {
+    background-color: #5D4037;
+    transform: translateY(-2px);
+}
+
+/* FOOTER */
+
+.site-footer {
+    background-color: #3E2723;
+    color: #F5EFE6;
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+.footer-text {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.footer-location {
+    color: #F5D6A6;
+    font-size: 0.85rem;
+}
+
+/* TABLET RESPONSIIVE DESIGN */
+
+@media (max-width: 900px) {
+
+    .menu-items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu-main {
+        width: 92%;
+    }
+
+    .logo {
+        font-size: 2.2rem;
+    }
+
+}
+
+/* MOBILE RESPONSIVE DESIGN */
+
+@media (max-width: 600px) {
+
+    .site-header {
+        padding: 1.5rem 1rem;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .tagline {
+        font-size: 0.9rem;
+    }
+
+    .main-nav {
+        gap: 0.8rem 1rem;
+    }
+
+    .nav-link {
+        font-size: 0.85rem;
+    }
+
+    .menu-main {
+        width: 94%;
+        padding: 2rem 0;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .menu-category {
+        padding: 1.3rem;
+        margin: 2rem 0;
+    }
+
+    .category-title {
+        font-size: 1.6rem;
+    }
+
+    .menu-image {
+        width: 250px;
+        height: 165px;
+    }
+
+    .menu-items {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .menu-item {
+        min-height: 130px;
+    }
+
+    .reservation-cta {
+        padding: 2.2rem 1.2rem;
+    }
+
+    .cta-title {
+        font-size: 1.7rem;
+    }
+
+}
+
+/* MENU SEARCH AND FILTER CONTROLS */
+
+.menu-controls {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #FFFAF3;
+    border: 1px solid #E3D6C8;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(62, 39, 35, 0.08);
+}
+
+.menu-controls .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+#menu-search {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #D6C7B8;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.filter-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.filter-controls select {
+    padding: 12px;
+    border: 1px solid #D6C7B8;
+    border-radius: 6px;
+    background-color: #FFFAF3;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#menu-results {
+    margin-top: 15px;
+    color: #355E3B;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .menu-controls {
+        padding: 18px;
+    }
+
+    .filter-controls {
+        flex-direction: column;
+    }
+
+    .filter-controls select {
+        width: 100%;
+    }
+}
+
+/* IMAGE LIGHTBOX */
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 85vh;
+    object-fit: contain;
+    border: 4px solid white;
+    border-radius: 10px;
+}
+
+.close-lightbox {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    background: none;
+    border: none;
+    font-size: 45px;
+    cursor: pointer;
+}
+
+.close-lightbox:hover {
+    color: #F5D6A6;
+}
+
+.menu-image {
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .lightbox {
+        padding: 15px;
+    }
+
+    .lightbox img {
+        max-width: 100%;
+        max-height: 75vh;
+    }
+
+    .close-lightbox {
+        top: 10px;
+        right: 20px;
+    }
+}
+
+/* =================================
+   BREEZE CAFE ANIMATIONS
+================================= */
+
+/* Menu section reveal animation */
+.menu-category.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.menu-category.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Menu card hover animation */
+.menu-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(62, 39, 35, 0.15);
+}
+
+/* Button animation */
+.button {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.button:hover {
+    transform: translateY(-3px);
+}
+
+/* Image animation */
+.menu-image {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.menu-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(62, 39, 35, 0.2);
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .menu-category.reveal,
+    .menu-item,
+    .button,
+    .menu-image {
+        transition: none;
+    }
+
+    .menu-category.reveal {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+

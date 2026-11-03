@@ -1,0 +1,575 @@
+
+
+/* Root font size */
+html {
+    font-size: 16px;
+}
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+
+body {
+    background-color: #F5EFE6;
+    color: #2F2F2F;
+    font-family: "Open Sans", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+.site-header {
+    background-color: #3E2723;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem 1.5rem;
+}
+
+/* Logo */
+.logo {
+    color: #F5D6A6;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.5rem;
+    margin-bottom: 0.3rem;
+}
+
+/* Tagline */
+.tagline {
+    color: #F5EFE6;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* NAVIGATION */
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 0.4rem 0;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #F5D6A6;
+    border-bottom-color: #6B8E23;
+}
+
+.nav-link.active {
+    color: #F5D6A6;
+    border-bottom-color: #6B8E23;
+}
+
+/* DIVERS */
+
+.section-divider {
+    border: none;
+    border-top: 1px solid #D6C7B8;
+    margin: 0;
+}
+
+/* MAIN CONTENT */
+
+.contact-main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 0 4rem;
+}
+
+/* CONTACT INTRODUCTION */
+
+.contact-intro {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 2.5rem;
+}
+
+.section-title {
+    color: #5D4037;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.4rem;
+    margin-bottom: 0.7rem;
+}
+
+.section-text {
+    color: #666666;
+    font-size: 1rem;
+}
+
+/* CONTACT DETAILS */
+
+.contact-details-section {
+    background-color: #FFFAF3;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #E3D6C8;
+    box-shadow: 0 5px 18px rgba(62, 39, 35, 0.08);
+    margin-bottom: 2rem;
+}
+
+.contact-details {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.contact-item {
+    background-color: white;
+    border: 1px solid #E2D8CE;
+    border-radius: 8px;
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-item:last-child {
+    margin-bottom: 0;
+}
+
+.contact-item-title {
+    color: #6B8E23;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+
+.contact-item-text {
+    color: #555555;
+    font-size: 0.95rem;
+}
+
+/* THE BUSINESS HOURS */
+
+.hours-section {
+    background-color: #3E2723;
+    color: #F5EFE6;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.hours-section .section-title {
+    color: #F5D6A6;
+}
+
+.hours-item {
+    color: #F5EFE6;
+    font-size: 0.95rem;
+    margin-bottom: 0.6rem;
+}
+
+.hours-item:last-child {
+    margin-bottom: 0;
+}
+
+/* CONTACT FORM SECTION */
+
+.contact-form-section {
+    width: 85%;
+    max-width: 750px;
+    margin: 50px auto;
+    padding: 35px;
+    background-color: #f5efe6;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+.contact-form-section .section-title {
+    text-align: center;
+    color: #4b2e22;
+    margin-bottom: 15px;
+}
+
+.contact-form-section .section-text {
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact-form label {
+    color: #3f332b;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #c8b9a8;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #333333;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #355e3b;
+    box-shadow: 0 0 5px rgba(53, 94, 59, 0.3);
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 140px;
+}
+
+.contact-form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.contact-form-buttons button {
+    cursor: pointer;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form-buttons .primary-button {
+    background-color: #355e3b;
+    color: #ffffff;
+}
+
+.contact-form-buttons .primary-button:hover {
+    background-color: #27452c;
+}
+
+.contact-form-buttons .secondary-button {
+    background-color: #6b5142;
+    color: #ffffff;
+}
+
+.contact-form-buttons .secondary-button:hover {
+    background-color: #4b382e;
+}
+
+/* RESPONSIVE CONTACT FORM */
+
+@media (max-width: 600px) {
+
+    .contact-form-section {
+        width: 90%;
+        padding: 22px;
+        box-sizing: border-box;
+    }
+
+    .contact-form-buttons {
+        flex-direction: column;
+    }
+
+    .contact-form-buttons button {
+        width: 100%;
+    }
+
+}
+
+/* =========================================
+   LOCATION
+   ========================================= */
+
+.location-section {
+    background-color: #FFFAF3;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 12px;
+    border: 1px solid #E3D6C8;
+    box-shadow: 0 5px 18px rgba(62, 39, 35, 0.08);
+    text-align: center;
+}
+
+.location-section .section-title {
+    margin-bottom: 0.5rem;
+}
+/* Leaflet Map */
+#map {
+    width: 85%;
+    max-width: 1000px;
+    height: 400px;
+    margin: 30px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+}
+
+@media (max-width: 600px) {
+    #map {
+        width: 90%;
+        height: 300px;
+    }
+}
+
+/* =========================================
+   SOCIAL MEDIA
+   ========================================= */
+
+.social-section {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    display: inline-block;
+    background-color: #5D4037;
+    color: white;
+    text-decoration: none;
+    padding: 0.7rem 1.4rem;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-link:hover {
+    background-color: #6B8E23;
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   RESERVATION CTA
+   ========================================= */
+
+.contact-reservation {
+    background-color: #3E2723;
+    color: white;
+    text-align: center;
+    padding: 3rem 2rem;
+    margin: 2rem 0 0;
+    border-radius: 12px;
+}
+
+.contact-reservation .section-title {
+    color: #F5D6A6;
+}
+
+.contact-reservation .section-text {
+    color: #F5EFE6;
+    max-width: 650px;
+    margin: 0 auto 1.5rem;
+}
+
+/* BUTTON */
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 6px;
+    padding: 0.75rem 1.5rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.primary-button {
+    background-color: #6B8E23;
+    color: white;
+}
+
+.primary-button:hover {
+    background-color: #5D4037;
+    transform: translateY(-2px);
+}
+
+/* FOOTER */
+
+.site-footer {
+    background-color: #3E2723;
+    color: #F5EFE6;
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+.site-footer p {
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+}
+
+.site-footer p:last-child {
+    color: #F5D6A6;
+    margin-bottom: 0;
+}
+
+/* TABLET RESPONSIVENESS */
+
+@media (max-width: 900px) {
+
+    .contact-main {
+        width: 92%;
+    }
+
+    .logo {
+        font-size: 2.2rem;
+    }
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 600px) {
+
+    .site-header {
+        padding: 1.5rem 1rem;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .tagline {
+        font-size: 0.9rem;
+    }
+
+    .main-nav {
+        gap: 0.8rem 1rem;
+    }
+
+    .nav-link {
+        font-size: 0.85rem;
+    }
+
+    .contact-main {
+        width: 94%;
+        padding: 2rem 0 3rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .contact-details-section {
+        padding: 1.3rem;
+    }
+
+    .contact-item {
+        padding: 1rem;
+    }
+
+    .hours-section {
+        padding: 1.5rem;
+    }
+
+    .location-section {
+        padding: 1.5rem;
+    }
+
+    .social-section {
+        padding: 1.5rem 0;
+    }
+
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-link {
+        width: 200px;
+        text-align: center;
+    }
+
+    .contact-reservation {
+        padding: 2.2rem 1.2rem;
+    }
+
+    .contact-reservation .section-title {
+        font-size: 1.7rem;
+    }
+
+    .button {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
+/* =================================
+   CONTACT PAGE ANIMATIONS
+================================= */
+
+/* Smooth form input transitions */
+.contact-form input,
+.contact-form textarea {
+    transition: border-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Highlight inputs when selected */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #355E3B;
+    box-shadow: 0 0 6px rgba(53, 94, 59, 0.25);
+}
+
+/* Smooth button hover effect */
+.contact-form button {
+    transition: transform 0.3s ease,
+                background-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.contact-form button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Smooth map appearance */
+#map {
+    transition: box-shadow 0.3s ease;
+}
+
+#map:hover {
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button,
+    #map {
+        transition: none;
+    }
+}

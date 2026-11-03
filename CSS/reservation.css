@@ -1,0 +1,439 @@
+/* Root font size */
+html {
+    font-size: 16px;
+}
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+
+body {
+    background-color: #F5EFE6;
+    color: #2F2F2F;
+    font-family: "Open Sans", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+.site-header {
+    background-color: #3E2723;
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem 1.5rem;
+}
+
+/* Logo */
+.logo {
+    color: #F5D6A6;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.5rem;
+    margin-bottom: 0.3rem;
+}
+
+/* Tagline */
+.tagline {
+    color: #F5EFE6;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* NAVIGATION */
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 0.4rem 0;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #F5D6A6;
+    border-bottom-color: #6B8E23;
+}
+
+/* Active reservation page */
+.nav-link.active {
+    color: #F5D6A6;
+    border-bottom-color: #6B8E23;
+}
+
+/* DIVIDER */
+
+.section-divider {
+    border: none;
+    border-top: 1px solid #D6C7B8;
+}
+
+/* MAIN RESERVATION */
+
+.reservation-main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3rem 0 4rem;
+}
+
+/* INTRODUCTION */
+
+.reservation-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 2.5rem;
+}
+
+.section-title {
+    color: #5D4037;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 2.4rem;
+    margin-bottom: 0.7rem;
+}
+
+.section-text {
+    color: #666666;
+    font-size: 1rem;
+}
+
+/* RESERVATION FORM */
+
+.reservation-form {
+    background-color: #FFFAF3;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 2.5rem;
+    border-radius: 12px;
+    border: 1px solid #E3D6C8;
+    box-shadow: 0 5px 18px rgba(62, 39, 35, 0.10);
+}
+
+/* Form group */
+.form-group {
+    margin-bottom: 1.4rem;
+}
+
+/* Labels */
+.form-label {
+    display: block;
+    color: #5D4037;
+    font-weight: 700;
+    margin-bottom: 0.4rem;
+}
+
+/* Inputs, select and textarea */
+.form-input,
+.form-select,
+.form-textarea {
+    width: 100%;
+    padding: 0.8rem 0.9rem;
+    border: 1px solid #CDBFB2;
+    border-radius: 6px;
+    background-color: white;
+    color: #2F2F2F;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Input focus */
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+    border-color: #6B8E23;
+    box-shadow: 0 0 0 3px rgba(107, 142, 35, 0.12);
+}
+
+/* Textarea */
+.form-textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+/* Placeholder */
+.form-input::placeholder,
+.form-textarea::placeholder {
+    color: #999999;
+}
+
+/* TWO-COLUMN FORM ROW  */
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+}
+
+/* FORM HEAD */
+
+.form-title {
+    color: #5D4037;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 1.8rem;
+}
+
+/* SUBMIT BUTTON */
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+/* General button styling */
+.button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Send Reservation Request */
+.primary-button {
+    background-color: #6B8E23;
+    color: white;
+}
+
+.primary-button:hover {
+    background-color: #5D4037;
+    transform: translateY(-2px);
+}
+
+/* Clear Form */
+.secondary-button {
+    background-color: #E0D5C8;
+    color: #3E2723;
+}
+
+.secondary-button:hover {
+    background-color: #CDBFB2;
+    transform: translateY(-2px);
+}
+
+.form-button {
+    display: block;
+    width: 100%;
+    padding: 0.85rem 1.5rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #6B8E23;
+    color: white;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover */
+.form-button:hover {
+    background-color: #5D4037;
+}
+
+/* RESERVATION INFO */
+
+.reservation-info {
+    background-color: #3E2723;
+    color: #F5EFE6;
+    max-width: 750px;
+    margin: 2rem auto 0;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.reservation-info-title {
+    color: #F5D6A6;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.5rem;
+    margin-bottom: 0.7rem;
+}
+
+.reservation-info-text {
+    font-size: 0.9rem;
+}
+
+/* FOOTER */
+
+.site-footer {
+    background-color: #3E2723;
+    color: #F5EFE6;
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+.footer-text {
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.footer-location {
+    color: #F5D6A6;
+    font-size: 0.85rem;
+}
+
+/* TABLET RESPONSIVENESS */
+
+@media (max-width: 900px) {
+
+    .reservation-main {
+        width: 92%;
+    }
+
+    .logo {
+        font-size: 2.2rem;
+    }
+
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 600px) {
+
+    .site-header {
+        padding: 1.5rem 1rem;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .tagline {
+        font-size: 0.9rem;
+    }
+
+    .main-nav {
+        gap: 0.8rem 1rem;
+    }
+
+    .nav-link {
+        font-size: 0.85rem;
+    }
+
+    .reservation-main {
+        width: 94%;
+        padding: 2rem 0 3rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .reservation-form {
+        padding: 1.5rem;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .reservation-info {
+        padding: 1.5rem;
+    }
+
+}
+
+
+
+/* Smooth entrance animation */
+@keyframes reservationFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animate the introduction */
+.reservation-intro {
+    animation: reservationFadeIn 0.8s ease;
+}
+
+/* Animate the reservation form */
+.reservation-form {
+    animation: reservationFadeIn 1s ease;
+    transition: box-shadow 0.3s ease,
+                transform 0.3s ease;
+}
+
+.reservation-form:hover {
+    box-shadow: 0 8px 22px rgba(62, 39, 35, 0.16);
+}
+
+/* Improve input focus animation */
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+    transform: scale(1.01);
+}
+
+/* Improve submit button animation */
+.form-button {
+    transition: background-color 0.3s ease,
+                transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: #5D4037;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(62, 39, 35, 0.2);
+}
+
+/* Animate reservation information */
+.reservation-info {
+    animation: reservationFadeIn 1.2s ease;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.reservation-info:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(62, 39, 35, 0.2);
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .reservation-intro,
+    .reservation-form,
+    .reservation-info {
+        animation: none;
+        transition: none;
+    }
+
+    .form-input:focus,
+    .form-select:focus,
+    .form-textarea:focus {
+        transform: none;
+    }
+}
